@@ -1,18 +1,12 @@
-n=0
-selection=""
-def isPrime(n):
-	if n in [1,2,3]:
-		return True
+selection=raw_input("Do you want to get prime number?")
+
+n=1
+found=False
+while found == False:
+	if n == 1 or n ==2 or n == 3:
+		found=True
+		n+1
+		break
 	else:
-		for i in range(2,n):
-			if n%i==0:
-				return False
-				break
-		return True
-
-while True:
-	n+=1
-	if isPrime(n):
-		print n
-#		selection=raw_input("Do you want to get next prime number?: (y/n) ")
-
+		
+	
